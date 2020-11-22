@@ -1,0 +1,13 @@
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.card {
+    box-shadow: 0px 0px 5px grey;
+}
+
+.portfolio-box {
+    width: 300px;
+    margin: 7px;
+}

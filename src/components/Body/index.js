@@ -1,5 +1,7 @@
-import React from 'react'
-import "./style.css"
+import React from 'react';
+import "./style.css";
+import Homepage from "../Homepage";
+import Portfolio from "../Portfolio";
 
 export default function Body(props) {
     return (
@@ -11,7 +13,7 @@ export default function Body(props) {
                     <br/>
                 </div>
             </div>
-            {props.currentHome ? <h1>"Homepage"</h1> : <h1>"Portfolio Page"</h1>}
+            {props.currentHome ? <Homepage/> : <Portfolio/>}
             <div className="row">
                 <div className="col"></div>
                 <div className="col-8">

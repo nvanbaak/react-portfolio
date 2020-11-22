@@ -1,6 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
+import Body from "./components/Body";
+import "./App.css"
 
 class App extends React.Component{
   
@@ -29,12 +31,16 @@ class App extends React.Component{
 
     render() {
         return (
+            <>
             <Header 
                 currentHome={this.state.currentHome}
                 homeClass={this.state.homeClass}
                 portfolioClass={this.state.portfolioClass}
                 goToPortfolio={this.goToPortfolio}
                 goToHome={this.goToHome}/>
+                
+            <Body currentHome={this.state.currentHome}/>
+            </>
             );
     }  
 }
